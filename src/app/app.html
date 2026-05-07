@@ -1,5 +1,11 @@
-<h1>{{ translations[lang].HELLO }}</h1>
+<h1>Mini Angular App</h1>
 
-<button (click)="switchLang('it')">Italiano</button>
-<button (click)="switchLang('en')">English</button>
-<button (click)="switchLang('es')">Español</button>
+<nav>
+  <a routerLink="/">Home</a>
+  |
+  <a routerLink="/about">About</a>
+</nav>
+
+<hr>
+
+<router-outlet></router-outlet>

@@ -1,21 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterOutlet, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
+  imports: [RouterOutlet, RouterLink],
   templateUrl: './app.html'
 })
-export class App {
-
-  lang = 'it';
-
-  translations: any = {
-    it: { HELLO: 'Ciao mondo' },
-    en: { HELLO: 'Hello world' },
-    es: { HELLO: 'Hola mundo' }
-  };
-
-  switchLang(l: string) {
-    this.lang = l;
-  }
-}
+export class App {}

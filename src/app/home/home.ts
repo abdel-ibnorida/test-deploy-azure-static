@@ -1,0 +1,21 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-home',
+  standalone: true,
+  templateUrl: './home.html'
+})
+export class HomeComponent {
+
+  lang = 'it';
+
+  translations: any = {
+    it: { HELLO: 'Ciao mondo' },
+    en: { HELLO: 'Hello world' },
+    es: { HELLO: 'Hola mundo' }
+  };
+
+  switchLang(l: string) {
+    this.lang = l;
+  }
+}
